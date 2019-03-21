@@ -120,7 +120,7 @@ function makeList() {
         appendList({
           name: item.t,
           resolution: item.t.match(ResolutionPatturnScope['all resolution']),
-          link: OriginalURL + item.a
+          link: OriginalURL + '/t/' + item.a
         })
       }
     })
@@ -155,7 +155,7 @@ function downloadList() {
 
       const File = {
         name: decodeURIComponent(el.href.split('/')[el.href.split('/').length - 1]),
-        context: requestData(BaseURL + 'port.php?to=' + encodeURIComponent(el.href.replace(OriginalURL, '/t/')))
+        context: requestData(BaseURL + 'port.php?to=' + encodeURIComponent(el.href.replace(OriginalURL, '')))
       }
       Compressed.file(File.name, File.context)
 
