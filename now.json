@@ -1,8 +1,8 @@
 {
   "version": 2,
   "builds": [
-    { "src": "*/proxies/myanimelist.php", "use": "now-php" },
-    { "src": "*/proxies/ohys.php", "use": "now-php" }
+    { "src": "/proxies/myanimelist.php", "use": "now-php" },
+    { "src": "/proxies/ohys.php", "use": "now-php" }
   ]
 }
 
