@@ -1,6 +1,14 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "index.html", "use": "@now/php" },
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@juicyfx/php@canary",
+      "config": {
+        "v": "7.3",
+        "composer": false
+      }
+    }
+  ]
 }
+
